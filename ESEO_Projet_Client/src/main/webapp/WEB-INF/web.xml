@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<servlet>
+		<description></description>
+		<display-name>ListeVille</display-name>
+		<servlet-name>ListeVille</servlet-name>
+		<servlet-class>com.servlet.ListeVille</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListeVille</servlet-name>
+		<url-pattern>/ListeVille</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>DistanceVille</display-name>
+		<servlet-name>DistanceVille</servlet-name>
+		<servlet-class>com.servlet.DistanceVille</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DistanceVille</servlet-name>
+		<url-pattern>/DistanceVille</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>DetailVille</display-name>
+		<servlet-name>DetailVille</servlet-name>
+		<servlet-class>com.servlet.DetailVille</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DetailVille</servlet-name>
+		<url-pattern>/DetailVille</url-pattern>
+	</servlet-mapping>
+
+
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+		</jsp-property-group>
+	</jsp-config>
+</web-app>
